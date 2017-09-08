@@ -13,7 +13,7 @@ import java.util.List;
 
 public interface UserService {
 
-    User findUserByame(String name);
+    User findUserByName(String name);
 
     List<User> findAllUser();
 }

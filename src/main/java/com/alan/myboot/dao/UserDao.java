@@ -15,7 +15,9 @@ import java.util.List;
 @Mapper
 public interface UserDao {
 
-    /*根据姓名查找*/
+    /**根据姓名查找
+    * @param  name String 用户姓名
+    * */
     @Select("select * from tuser where name=#{name}")
     @Results({
             @Result(property = "id",column = "id"),
@@ -25,6 +27,9 @@ public interface UserDao {
     })
     User findUserByame(@Param("name") String name);
 
+    /**
+     *
+     */
     @Select("select * from tuser")
     List<User> findAllUser();
 }
