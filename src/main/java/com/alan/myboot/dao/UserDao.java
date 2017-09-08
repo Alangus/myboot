@@ -25,7 +25,7 @@ public interface UserDao {
             @Result(property = "age",column = "age"),
             @Result(property = "address",column = "address")
     })
-    User findUserByame(@Param("name") String name);
+    User findUserByName(@Param("name") String name);
 
     /**
      *

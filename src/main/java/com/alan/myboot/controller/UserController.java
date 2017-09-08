@@ -21,7 +21,7 @@ public class UserController {
 
     @RequestMapping(value = "/user",method = RequestMethod.GET)
     public User findUserByame(@RequestParam(value = "name") String name) {
-        return userService.findUserByame(name);
+        return userService.findUserByName(name);
     }
 
     @RequestMapping(value = "user/all",method = RequestMethod.GET)
