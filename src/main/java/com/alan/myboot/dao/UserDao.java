@@ -15,6 +15,7 @@ import java.util.List;
 @Mapper
 public interface UserDao {
 
+    /*根据姓名查找*/
     @Select("select * from tuser where name=#{name}")
     @Results({
             @Result(property = "id",column = "id"),
